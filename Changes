@@ -1,6 +1,6 @@
 Revision history for Perl extension String::Strip
 
-1.02  Mon Feb 13 2012
+1.02  Tue Feb 14 2012
     - new maintainer PHRED
     - fix for 64 bit systems - https://rt.cpan.org/Public/Bug/Display.html?id=70028 [chrishammond]
 
