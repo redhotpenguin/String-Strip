@@ -38,15 +38,16 @@ StripLSpace(arg)
      char *arg
 CODE:
      char *pcF, *pcR;
+     int i;
 
      if (!SvOK(ST(0)))
        XSRETURN_UNDEF;
 
-     if (strlen(arg)) {
+     if (i = strlen(arg)) {
        for (pcF = arg; *pcF && isspace(*pcF); pcF++)
          ;
 
-       strcpy(arg, pcF);
+       memmove(arg, pcF, i);
      }
 OUTPUT:
      arg
@@ -70,7 +71,7 @@ CODE:
 	 for (pcF = arg; *pcF && isspace(*pcF); pcF++)
 	   ;
 
-	 strcpy(arg, pcF);
+	     memmove(arg, pcF,i);
        }
      }
 OUTPUT:

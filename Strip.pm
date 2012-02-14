@@ -15,7 +15,7 @@ require AutoLoader;
 	     StripLTSpace
 	     StripSpace
 );
-$VERSION = '1.01';
+$VERSION = '1.02';
 
 bootstrap String::Strip $VERSION;
 
@@ -52,6 +52,10 @@ StripSpace - Removes all spaces from given string
 
 I do these things often, and these routines tend to be about 35%
 faster than the corresponding regex methods.
+
+=head1 MAINTAINER
+
+http://search.cpan.org/~phred
 
 =head1 AUTHOR
 
